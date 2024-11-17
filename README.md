@@ -1,5 +1,5 @@
 
-# **Rental PG Website - RentHub**
+# **Rental PG Website**
 
 This project is a full-stack rental PG website named **RentHub**. It allows users to search for rental PGs, filter results based on their criteria, book accommodations, and make secure payments. 
 
