@@ -136,8 +136,7 @@ A simple and responsive lead management system built with React and Material-UI.
 - **Data Visualization**: The dashboard includes charts that visualize user sentiment categories and login status.
 
 ## Screenshots
-![p2](https://github.com/user-attachments/assets/cfe1c3bb-82b1-4e4b-bdcd-d327a8705f25)
-
+[Dashboard UI](https://github.com/Mausumi134/RentUP/blob/main/dashboard.pdf)
 
 This project is a full-stack rental PG website named **RentHub**. It allows users to search for rental PGs, filter results based on their criteria, book accommodations, and make secure payments. Users will also receive a confirmation email upon booking, with tracking details to monitor their reservation status.
 
