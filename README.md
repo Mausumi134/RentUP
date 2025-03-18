@@ -2,6 +2,10 @@
 
 This project is a full-stack rental PG website named **RentHub**. It allows users to search for rental PGs, filter results based on their criteria, book accommodations, and make secure payments. Users will also receive a confirmation email upon booking, with tracking details to monitor their reservation status.
 
+![p1](https://github.com/user-attachments/assets/32bd9727-3d00-454f-81d0-55947c01e10d)
+
+![p](https://github.com/user-attachments/assets/3dad809d-4807-4a06-ab15-742a0fa1f417)
+
 ## **Features**
 - Search for PG accommodations based on location, budget, and amenities.
 - Apply filters for criteria such as room type, gender-specific PGs, etc.
