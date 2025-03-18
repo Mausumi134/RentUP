@@ -40,7 +40,7 @@ Make sure you have the following installed:
 ### **2. Clone the Repository**
 ```bash
 git clone <repository_url>
-cd RentHub
+cd RentUP
 ```
 
 ### **3. Backend Setup**
