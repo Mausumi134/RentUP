@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview --port $PORT --host 0.0.0.0",
-    "install:deps": "npm install"
+    "install:deps": "npm install",
+    "build:prod": "npm install --include=dev && vite build"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -22,17 +23,17 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.3.0",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vite": "^7.2.4",
+    "@vitejs/plugin-react": "^5.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "vite": "^7.2.4"
+    "globals": "^16.5.0"
   }
 }
