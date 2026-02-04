@@ -23,7 +23,12 @@ export default defineConfig({
   preview: {
     port: process.env.PORT || 3000,
     host: '0.0.0.0',
-    allowedHosts: ['all']
+    allowedHosts: [
+      'rentup-1.onrender.com',
+      '.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ]
   },
   build: {
     outDir: 'dist',

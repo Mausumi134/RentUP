@@ -11,7 +11,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite preview --port $PORT --host 0.0.0.0",
+    "start": "npx serve -s dist -l $PORT",
     "install:deps": "npm install",
     "build:prod": "npm install --include=dev && vite build"
   },
@@ -25,7 +25,8 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "vite": "^7.2.4",
-    "@vitejs/plugin-react": "^5.1.1"
+    "@vitejs/plugin-react": "^5.1.1",
+    "serve": "^14.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
