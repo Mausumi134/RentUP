@@ -1,0 +1,169 @@
+header {
+  background-color: #fff;
+  height: 10vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+header img {
+  width: 170px;
+}
+header a {
+  margin-left: 30px;
+  transition: 0.5s;
+  font-weight: 500;
+}
+header a:hover {
+  color: #27ae60;
+}
+header span {
+  width: auto;
+  padding: 0px 6px;
+  background: #27ae60;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  font-weight: 400;
+}
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+header .toggle {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  header img {
+    margin-top: 30px;
+  }
+  header .button {
+    display: none;
+  }
+  header .nav .flex {
+    display: none;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 20px;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #27ae60;
+    padding: 20px;
+  }
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+.cart-link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 0.75rem;
+}
+/* User Menu Styles */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.user-profile:hover {
+  background: #27ae60;
+  color: white;
+}
+
+.user-profile i {
+  font-size: 14px;
+}
+
+.user-profile span {
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #dc3545 !important;
+  color: white !important;
+}
+
+.logout-btn:hover {
+  background: #c82333 !important;
+}
+
+.cart-icon {
+  position: relative;
+  padding: 10px;
+  color: #2c3e50;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #27ae60;
+}
+
+.cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #dc3545;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .user-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .user-profile {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .user-profile span {
+    display: none;
+  }
+}

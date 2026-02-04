@@ -7,24 +7,28 @@ import { errorMiddleware } from "./error/error.js";
 import loginRouter from "./routes/loginRoute.js";
 import registerRouter from "./routes/registerRoute.js"; 
 import contactRoute from "./routes/contactRoute.js";
+import paymentRoute from "./routes/paymentRoute.js";
+
 const app = express();
-app.use(cors({ credentials: true, origin: true }));
+
+// Load environment variables first
 dotenv.config({ path: "./config/config.env" });
 
-app.use(
-  cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["POST"],
-    credentials: true,
-  })
-);
+// CORS configuration
+app.use(cors({
+  origin: [process.env.FRONTEND_URL, "http://localhost:3000"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/v1/login", loginRouter);
 app.use("/api/v1/register", registerRouter);
 app.use("/api/v1/contact", contactRoute);
-
+app.use("/api/v1/payment", paymentRoute);
 
 dbConnection();
 app.use(errorMiddleware);
